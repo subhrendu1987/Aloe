@@ -94,7 +94,7 @@ hr.small
 }
 
 .intro-header
-{background:center center no-repeat;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;margin-bottom:50px}
+{background:center center no-repeat;-webkit-background-size:100% 50%;-moz-background-size:100% 50%;background-size:100% 50%;-o-background-size:100% 50%;margin-bottom:50px}
 
 .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading
 {padding:100px 0 50px;color:#000}
