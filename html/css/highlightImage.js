@@ -10,22 +10,27 @@ function closeModal() {
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 function highlight(callerObject) {
   if(callerObject!=null){
-    alert("Highlight Called");
-    var hoverImageLoc = callerObject.getAttribute("data-hover-image");
+    //alert("Highlight Called");
+    var hoverImageLoc = (callerObject.getAttribute("data-hover-image")!=null)?callerObject.getAttribute("data-hover-image"): callerObject.getAttribute("src");
     if(hoverImageLoc!=null){
-      alert("imageLoc= " + hoverImageLoc);
+      //alert("imageLoc= " + hoverImageLoc);
       createModal();
-      document.getElementById('highlighted-image').src = hoverImageLoc;
+      var viewport=document.getElementById('highlighted-image');
+      viewport.src = hoverImageLoc;
+      //var scale=(callerObject.getAttribute("data-zoom-scale")!=null)?callerObject.getAttribute("data-zoom-scale"):1;
+      //alert(parseInt(viewport.clientWidth));
+      //viewport.style.width=viewport.parentNode.style.width;
+      //alert(viewport.style.width);
       openModal();
     }
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 function createModal(){
-  document.body.innerHTML = '<div id="myModal" class="modal"><span class="close cursor" onclick="closeModal()">&times;</span><center><div class="modal-content"><img id="highlighted-image" src="" style="width:90%"></div></center></div>'+document.body.innerHTML;
+  document.body.innerHTML = '<div id="myModal" class="modal"><span class="close cursor" onclick="closeModal()">&times;</span><center><div class="modal-content"><img id="highlighted-image" src="" ></div></center></div>'+document.body.innerHTML;
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 function deleteModal(){
-  var element = document.getElementById(myModal);
+  var element = document.getElementById('myModal');
   element.parentNode.removeChild(element);
 }
