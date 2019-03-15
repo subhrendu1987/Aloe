@@ -47,7 +47,8 @@ function changeTitle(callerObject){
     		var active=(key==fileName)?' class="current"':'';
     }else{
     	if(key=="index.html"){
-    		var active=(key==fileName)?' class="current"':'';	
+    		var active=(key==fileName)?' class="current"':'';
+    		alert(active+"---"+key);
     	}
     }
     navBar=navBar+'<li><a href="'+key+'"'+active+'>'+pages[key]+'</a></li>';
