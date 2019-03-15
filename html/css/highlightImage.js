@@ -44,15 +44,12 @@ function changeTitle(callerObject){
   var navBar='<nav><ul>';
   for(var key in pages){
     if(fileName.length > 0 ){
-    		var active=(key==fileName)?' class="current"':'';
+    	var active=(key==fileName)?' class="current"':'';
     }else{
-    	if(key=="index.html"){
-    		var active=(key==fileName)?' class="current"':'';
-    		alert(active+"---"+key);
-    	}
+    	var active=(key=="index.html")?' class="current"':'';
+    	alert(active+"---"+key);
     }
-    navBar=navBar+'<li><a href="'+key+'"'+active+'>'+pages[key]+'</a></li>';
-
+  navBar=navBar+'<li><a href="'+key+'"'+active+'>'+pages[key]+'</a></li>';
   }
   navBar=navBar+'</ul></nav>';
   document.getElementById('container').innerHTML= '<header><!--start logo--><a href="index.html" id="logo"><img src="css/logo.png" height="80"> </a><!--end logo--><!--start menu-->'+navBar+'<!--end menu--></header>' + document.getElementById('container').innerHTML;
