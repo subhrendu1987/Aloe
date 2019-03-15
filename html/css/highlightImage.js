@@ -42,11 +42,8 @@ function changeTitle(callerObject){
   var pages= {"index.html":"Home","about.html":"About","design.html":"Design","results.html":"Results","contact.html":"Contact"};
   //alert(fileName[0]);
   var navBar='<nav><ul>';
-  if(fileName.length()==0){
-
-  }
   for(var key in pages){
-    if(fileName.length() > 0 ){
+    if(fileName.length > 0 ){
     		var active=(key==fileName)?' class="current"':'';
     }else{
     	if(key=="index.html"){
@@ -58,7 +55,7 @@ function changeTitle(callerObject){
   }
   navBar=navBar+'</ul></nav>';
   document.getElementById('container').innerHTML= '<header><!--start logo--><a href="index.html" id="logo"><img src="css/logo.png" height="80"> </a><!--end logo--><!--start menu-->'+navBar+'<!--end menu--></header>' + document.getElementById('container').innerHTML;
-  var titleString="Aloe - "+(fileName.length() >0 ?pages[fileName]:"Home");
+  var titleString="Aloe - "+(fileName.length >0 ?pages[fileName]:"Home");
   //alert(document.title);
   document.title=titleString;
 }
