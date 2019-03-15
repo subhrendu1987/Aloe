@@ -48,7 +48,6 @@ function changeTitle(callerObject){
     	active=(key==fileName)?' class="current"':'';
     }else{
     	active=(key=="index.html")?' class="current"':'';
-    	alert(active+"---"+key);
     }
   navBar=navBar+'<li><a href="'+key+'"'+active+'>'+pages[key]+'</a></li>';
   }
