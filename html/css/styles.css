@@ -152,7 +152,15 @@ h4 {
 	padding: 15px;
 	margin-bottom: 10px;
 }
-	
+.contactBlock {
+	float: left;
+	width: 450px;
+	position: relative;
+	background: transparent;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
 .group2 {
 	float: left;
 	width: 274px;
