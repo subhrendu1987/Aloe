@@ -49,7 +49,7 @@ function changeTitle(callerObject){
     }else{
     	active=(key=="index.html")?' class="current"':'';
     }
-  navBar=navBar+'<li><a href="'+key+'"'+active+'>'+pages[key]+'</a></li>';
+  	navBar=navBar+'<li><a href="'+key+'"'+active+'>'+pages[key]+'</a></li>';
   }
   navBar=navBar+'</ul></nav>';
   document.getElementById('container').innerHTML= '<header><!--start logo--><a href="index.html" id="logo"><img src="css/logo.png" height="80"> </a><!--end logo--><!--start menu-->'+navBar+'<!--end menu--></header>' + document.getElementById('container').innerHTML;
