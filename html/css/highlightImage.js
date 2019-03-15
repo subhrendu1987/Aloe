@@ -42,11 +42,12 @@ function changeTitle(callerObject){
   var pages= {"index.html":"Home","about.html":"About","design.html":"Design","results.html":"Results","contact.html":"Contact"};
   //alert(fileName[0]);
   var navBar='<nav><ul>';
+  var active="";
   for(var key in pages){
     if(fileName.length > 0 ){
-    	var active=(key==fileName)?' class="current"':'';
+    	active=(key==fileName)?' class="current"':'';
     }else{
-    	var active=(key=="index.html")?' class="current"':'';
+    	active=(key=="index.html")?' class="current"':'';
     	alert(active+"---"+key);
     }
   navBar=navBar+'<li><a href="'+key+'"'+active+'>'+pages[key]+'</a></li>';
