@@ -235,7 +235,18 @@ header {
 .holder_content_separator{
 	margin-bottom: 20px;
 }
-	
+
+.modules{
+	width: 100%;
+}
+.modules th{
+	width: 33%;
+}
+.modules td{
+	width: 33%;
+	text-align: left;
+	vertical-align:top;
+}
 /***************************************************
 			        GALLERY
 ***************************************************/
