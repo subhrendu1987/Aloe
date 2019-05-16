@@ -15,33 +15,36 @@
    <section id="intro">
       <hgroup>
       <h2> Features</h2>
+      <p>(Click on the images* for the animated image)</p>
       </hgroup>
    </section>
-  <div class="holder_content">
-      <section class="group1">
-         <h3>Fault Tolerance</h3>
+  <table class="modules"><tr>
+    <th><h2>Fault Tolerance</h2></th>
+    <th><h2>Elastic Auto-scalability</h2></th>
+    <th><h2>Fast Flow Installation</h2></th>
+    <tr align="left" valign="top"></tr>
+    <td>
          <p> Aloe readjusts the &mu;C containers in case any failure occures.</p>
          <img class="enlarge-image" src="about/Example_Elastic.gif" alt="Auto-scaling" width="260" height="150" onclick="highlight(this)" >
-      </section>
-      <section class="group2">
-         <h3>Elastic Auto-scalability</h3>
-         <p>Depending on the topology change Aloe finds suitable placement of &mu;C</p>
+    </td><td>
+      <p>Depending on the topology change Aloe finds suitable placement of &mu;C</p>
          <img class="enlarge-image" src="about/Example_Elastic.gif" alt="Auto-scaling" width="260" height="150" onclick="highlight(this)" >
-      </section>
-      <section class="group3">
-         <h3>Fast Flow Installation</h3>
-         <p>The &mu;Cs are placed near to the data plane devices. Therefore, IoT short flows are installed quickly.</p>
-         <img class="enlarge-image" src="about/Example.gif" width="260" height="150" onclick="highlight(this)" >
-      </section>
+    </td><td>
+      <p>The &mu;Cs are placed near to the data plane devices. Therefore, IoT short flows are installed quickly.</p>
+    </td>
+  </tr><tr>
+    <th><h2>LightWeight &mu;C Migration</h2></th>
+    <th><h2>QoS Ensuring &mu;C Operation</h2></th>
+    <th><h2>Controller Application Independent</h2></th>
+  </tr><tr>
+    <td>
+      <p> Aloe uses lightweight &mu;C migration using "Docker" containers. Thus can ensure lower down time, low migration overhead.
+    </td><td>
+      <p> Aloe can achieve resource reservation of &mu;C. Thus Aloe can ensure QoS for control plane even in high load scenarios.
+    </td><td>
+      <p>Aloe does not depend on the control plane application. By using Docker Aloe can support any type of controller application.</p>
+    </td>
+  </tr></table>
   </div>
 	<!--end holder-->
-  <section id="intro">
-      <hgroup>
-      <h2> Self-stabilizing Algorithm</h2>
-      </hgroup>
-   </section>
-  <table><tr><td>
-  Aloe relies on a self-stabilizing maximal indipendent set (SS-MIS) algorithm for &mu;C placements. It ensures that the distributed SS-MIS converges in linear time. Once the SS-MIS converges, the independent set is labeled as the set of &mu;Cs.</td><td>
-  <img class="enlarge-image" src="about/SS-MIS.png" data-hover-image-not-in-use="about/SS-MIS.gif" alt="SS-MIS" width="460px" onclick="highlight(this)" data-zoom-scale="1" ></td>
-  </tr></table>
 </body></html>
