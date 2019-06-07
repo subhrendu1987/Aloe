@@ -11,52 +11,56 @@
    <div class="bg">
     <!--start container-->
     <div id="container">
+        <h2> .</h2>
+      <section id="intro">
+        <center><b>Aloe Sources:</b> Aloe is maintained as a github repository and can be accessed from <b><a href="https://github.com/subhrendu1987/Aloe-Source">https://github.com/subhrendu1987/Aloe-Source</a></b></center>
+      </section>
    <!----------------------------------------------------------------------------------------------------------->
-   <section id="intro">
-      <hgroup>
-      <h2> Aloe Functional Modules</h2>
-      <p>(Click on the images* to enlarge)</p>
-      </hgroup>
-   </section>
-  <table class="modules"><tr>
-    <th><h2>Topology Management Module</h2></th>
-    <th><h2>State Discovery Module</h2></th>
-    <th><h2>&mu;C Placement Module</h2></th>
-    <tr align="left" valign="top"></tr>
-    <td>
-      <ol>
-       <li> Identify the nodes in the neighborhood,</li>
-       <li> Determine whether an Aloe service is running in that node.</li>
-      </ol>
-    </td><td>
-      <p> An Aloe node can be in 3 states.</p>
+      <section id="intro">
+         <hgroup>
+          <h2> Aloe Functional Modules</h2>
+          <p>(Click on the images* to enlarge)</p>
+         </hgroup>
+      </section>
+      <table class="modules"><tr>
+        <th><h2>Topology Management Module</h2></th>
+        <th><h2>State Discovery Module</h2></th>
+        <th><h2>&mu;C Placement Module</h2></th>
+        <tr align="left" valign="top"></tr>
+        <td>
           <ol>
-            <li>general (does not host a µC service)</li>
-            <li>µC (hosts a µC)</li>
-            <li>undecided (an intermediate state) </li>
+           <li> Identify the nodes in the neighborhood,</li>
+           <li> Determine whether an Aloe service is running in that node.</li>
           </ol>
-      <p>This module uses <i>REST API</i> to identify the states of the neighbour nodes.</p>
-    </td><td>
-      <p> Based on the neighbor states collected, every node independently determines whether it needs to launch a µC service or not. </p>
-    </td>
-  </tr><tr>
-    <th><h2>&mu;C Manager Module</h2></th>
-    <th><h2>PushToNode Module</h2></th>
-    <th><h2>Resource Management Module</h2></th>
-  </tr><tr>
-    <td>
-      <p> Due to change in topology the µC arrangements may require changes. This module is responsible for consistancy management and migration of µCs through a lightweight migration technique.</p>
-    </td><td>
-      <p> Along with fault-tolerance, Aloe supports rapid deployment and runtime customization of the system. It provides an interface for monitoring and changing the policy level information for the µC at runtime.
-    </td><td>
-      <p> In-network processing hosts µC and IoT workloads using the same infrastructure. This module ensures the QoS requirements for µC by resrving resources for the control plane applications.</p>
-    </td>
-  </tr><tr>
-    <td colspan="3">
-      <center><img class="enlarge-image" src="design/FlowChart.jpg" data-hover-image-not-in-use="design/FlowChart.jpg" alt="SS-MIS" width="460px" onclick="highlight(this)" data-zoom-scale="1" ></center>
-    </td>
-  </tr></table>
-	<!--end holder-->
+        </td><td>
+          <p> An Aloe node can be in 3 states.</p>
+              <ol>
+                <li>general (does not host a µC service)</li>
+                <li>µC (hosts a µC)</li>
+                <li>undecided (an intermediate state) </li>
+              </ol>
+          <p>This module uses <i>REST API</i> to identify the states of the neighbour nodes.</p>
+        </td><td>
+          <p> Based on the neighbor states collected, every node independently determines whether it needs to launch a µC service or not. </p>
+        </td>
+      </tr><tr>
+        <th><h2>&mu;C Manager Module</h2></th>
+        <th><h2>PushToNode Module</h2></th>
+        <th><h2>Resource Management Module</h2></th>
+      </tr><tr>
+        <td>
+          <p> Due to change in topology the µC arrangements may require changes. This module is responsible for consistancy management and migration of µCs through a lightweight migration technique.</p>
+        </td><td>
+          <p> Along with fault-tolerance, Aloe supports rapid deployment and runtime customization of the system. It provides an interface for monitoring and changing the policy level information for the µC at runtime.</p>
+        </td><td>
+          <p> In-network processing hosts µC and IoT workloads using the same infrastructure. This module ensures the QoS requirements for µC by resrving resources for the control plane applications.</p>
+        </td>
+      </tr><tr>
+        <td colspan="3">
+          <center><img class="enlarge-image" src="design/FlowChart.jpg" data-hover-image-not-in-use="design/FlowChart.jpg" alt="SS-MIS" width="460px" onclick="highlight(this)" data-zoom-scale="1" ></center>
+        </td>
+      </tr></table>
+    	<!--end holder-->
   <section id="intro">
       <hgroup>
       <h2> Under The Hood</h2>
@@ -67,4 +71,5 @@
   Aloe relies on a self-stabilizing maximal indipendent set (SS-MIS) algorithm for &mu;C placements. It ensures that the distributed SS-MIS converges in linear time. Once the SS-MIS converges, the independent set is labeled as the set of &mu;Cs.</td><td>
   <img class="enlarge-image" src="about/SS-MIS.png" data-hover-image-not-in-use="about/SS-MIS.gif" alt="SS-MIS" width="460px" onclick="highlight(this)" data-zoom-scale="1" ></td>
   </tr></table>
+</div></div>
 </body></html>
