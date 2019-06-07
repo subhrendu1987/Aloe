@@ -4,4 +4,5 @@
 [Design](https://subhrendu1987.github.io/Aloe/html/design.html)
 [Results](https://subhrendu1987.github.io/Aloe/html/results.html)
 [Contact](https://subhrendu1987.github.io/Aloe/html/contact.html)
+[Sitemap](https://subhrendu1987.github.io/Aloe/sitemap.xml)
    
